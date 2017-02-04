@@ -1,0 +1,104 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+}
+
+#welcome-screen {
+    font-weight: bold;
+    font-size: 50px;
+    padding: 250px 500px 200px 480px;
+    color: white;
+	background-image: url(img/smile.png);
+    background-repeat: repeat;
+	background-size: cover;
+	height: 100vh;
+}
+#chat-screen {
+    padding: 30px;
+	background-image: url(img/bored-sherlock.png);
+    background-repeat: repeat;
+	height: 100vh;
+	display: none;
+}
+#new-message-box {
+    color: yellow;
+    background-color: transparent;
+    padding: 15px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #ffd11a;
+    margin: 60px 30px 30px 280px;
+}
+#button1 {
+    background-color: black;
+    color: #ffd11a;
+    padding: 15px;
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    border-color: #ffd11a;
+    font-weight: bold;
+}
+#button2 {
+    background-color: black;
+    color: #ffd11a;
+    padding: 15px;
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    border-color: #ffd11a;
+    font-weight: bold;
+    margin-left: 610px;
+}
+.chat-message {
+    ????
+}
+.user-name {
+    font-weight: : bold;
+    font-style: italic;
+    color: white;
+    margin-left: 25px;
+}
+.message-content {
+    color: #c2f0f0;
+    background-color: transparent;
+    padding: 50px;
+    width: 250px;
+    height: 10px;
+    border-radius: 0px 20px 20px 20px;
+    border-width: 3px;
+    border-color: white;
+    border-style: outset;
+    margin-left: 50px;
+}
+.date {
+    color: white;
+    font-style: oblique;
+}
+input {
+    color: white;
+    background-color: transparent;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    border-color: #ffd11a;
+}
+.smile {
+    margin: 0;
+    height: 500px;
+    width: 200px;
+    background-image: url(bored-sherlock.png);
+    background-size: 1400px 1024px;
+}
+.bored {
+    margin: 0;
+    height: 500px;
+    width: 200px;
+    background-image: url(,.png);
+    background-size: 1400px 1024px;
+}
