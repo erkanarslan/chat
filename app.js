@@ -12,11 +12,10 @@ mongoose.connect(databaseURI);
 
 var Schema = mongoose.Schema;
 
-var messageSchema = new Schema({ 
-  _id: String,
-  user: String, 
-  content: String,
-  date: { type: Date, default: Date.now }
+var messageSchema = new Schema({   
+ 	user : String,
+	content : String,
+	date : Date
 });
  
 
