@@ -18,7 +18,7 @@ var messageSchema = new Schema({
   content: String,
   date: { type: Date, default: Date.now }
 });
-
+ 
 
 app.use(express.static('public'));
 
