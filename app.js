@@ -9,6 +9,7 @@ var database = config.database;
 var databaseURI = "mongodb://" + database.user + ":" + database.password + "@" + database.server + "/" + database.database;
 console.log(databaseURI);
 mongoose.connect(databaseURI);
+mongoose.set('debug', true);
 
 var Schema = mongoose.Schema;
 
@@ -19,6 +20,7 @@ var messageSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
+var db = mongoose.connection;
 
 app.use(express.static('public'));
 
@@ -31,7 +33,7 @@ app.get('/api/messages', function(req, res){
 		{
 			_id : '123456789',
 			user : 'Erkan',
-			content : 'Hi!',
+			content : 'HelloMan!',
 			date : 123456789
 		}
 	]);
@@ -46,4 +48,20 @@ process.on('SIGINT', function(){
 	mongoose.connection.close();
 	console.log('MongoDB connection closed');
 	process.exit();
+});
+
+messageSchema.save(function (err, fluffy) {
+  if (err) return console.error(err);
+ 	else{
+ 		console.log("success");
+ 		func();
+
+ 	}
+});
+
+
+var func = app.get('/api/messages', function (req, res) {
+    Message.find({}, function (err, docs) {
+        res.json(docs);
+    });
 });
