@@ -23,6 +23,18 @@ app.get('/api/messages', function(req, res){
 			user : 'Erkan',
 			content : 'Hi!',
 			date : 123456789
+		},
+		{
+			_id : '123456789',
+			user : 'Yunus',
+			content : 'Hello!',
+			date : 123456789
+		},
+		{
+			_id : '123456789',
+			user : 'Burak',
+			content : 'Selam!',
+			date : 123456789
 		}
 	]);
 });
